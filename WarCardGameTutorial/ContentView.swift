@@ -10,7 +10,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        
+        ZStack {
+            Image("background")
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                Image("logo")
+                
+                HStack {
+                    Image("back")
+                    Image("back")
+                }
+                
+                Text("button")
+
+            }
+        }
+        
     }
 }
 
